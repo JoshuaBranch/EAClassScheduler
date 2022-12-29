@@ -1,0 +1,163 @@
+.mainBody{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 15%;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 15%;
+    text-decoration: underline;
+  }
+
+.aboutHeader{
+    text-align: left;
+    font-size: 30px;
+    padding-top: 1%;
+    text-decoration: underline;
+}
+
+.aboutBody{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.aboutBodyLink{
+    color: white;
+}
+.homeHeader{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.stepsInstructionsText{
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+hr{
+  display: block;
+}
+
+.submitCA{
+  background-color:   rgb(255, 255, 255);
+  text-decoration: none;
+  box-shadow: none;
+  border-radius: 10px;
+  color: black;
+}
+
+.Step1Inst{
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.selectTerm{
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.completedClasses{
+  text-decoration: underline;
+  font-size: 20px;
+}
+.srLifeTitle{
+  text-decoration: underline;
+  font-weight: bold;
+}
+.termSelector{
+text-decoration: none;
+}
+.step1Text{
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.submitForm{
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.testersHeader{
+  text-align: center;
+  font-size: 30px;
+  padding-top: 1%;
+  text-decoration: underline;
+}
+.testersBody{
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: yellow;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 45px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.dropdown {
+  max-width: 250px;
+  margin-bottom: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.dropdown .selected {
+  border: 1px solid currentColor;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.dropdown .selected::after {
+  content: "\f107";
+  font-family: FontAwesome;
+  opacity: 0.4;
+}
+.dropdown .selected.active::after {
+  content: "\f106";
+}
+.dropdown .options {
+  border: 1px solid currentColor;
+  display: none;
+}
+.dropdown .options.active {
+  display: block;
+}
+.dropdown .options .option:hover {
+  background: hsl(0 0% 95%);
+}
+.dropdown .options .option label {
+  display: block;
+  cursor: pointer;
+}

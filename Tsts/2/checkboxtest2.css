@@ -1,0 +1,41 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  .dropdown {
+    max-width: 250px;
+    margin-bottom: 5px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .dropdown .selected {
+    border: 1px solid currentColor;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .dropdown .selected::after {
+    content: "\f107";
+    font-family: FontAwesome;
+    opacity: 0.4;
+  }
+  .dropdown .selected.active::after {
+    content: "\f106";
+  }
+  .dropdown .options {
+    border: 1px solid currentColor;
+    display: none;
+  }
+  .dropdown .options.active {
+    display: block;
+  }
+  .dropdown .options .option:hover {
+    background: hsl(0 0% 95%);
+  }
+  .dropdown .options .option label {
+    display: block;
+    cursor: pointer;
+  }
